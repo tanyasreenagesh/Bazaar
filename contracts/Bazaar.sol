@@ -36,6 +36,9 @@ contract Bazaar {
 
     mapping(uint256 => Piece) public allPieces;
 
+    event PiecePublished(address _seller, address _contractAddy, uint256 _tokenID, uint256 _price);
+    event PieceBought(address _newOwner, address _contractAddy, uint256 _tokenID, uint256 _price);
+
     /*
     TODO: Write events for logging.
     */
@@ -64,6 +67,8 @@ contract Bazaar {
             owner: payable(address(0)),
             isSold: false
         });
+
+        emit PiecePublished(msg.sender, _contractAddy, _tokenID, _price);
     }
 
     /*
@@ -75,12 +80,14 @@ contract Bazaar {
     */
     function buyPiece(uint256 _pieceID) payable public {
         Piece storage toSell = allPieces[_pieceID];
-        require(msg.value >= toSell.price, "Not enough balance to complete tx.");
-        require(toSell.isSold == false, "This NFT is already sold.");
+        require(msg.value >= toSell.price, "Not enough ETH to complete tx!");
+        require(toSell.isSold == false, "This NFT is not for sale!");
         
         toSell.seller.transfer(msg.value);
         toSell.owner = payable(msg.sender);
         toSell.isSold = true;
+
+        emit PieceBought(msg.sender, toSell.contractAddy, toSell.tokenID, toSell.price);
 
         onSalePieceCount.decrement();
         soldPieceCount.increment();
