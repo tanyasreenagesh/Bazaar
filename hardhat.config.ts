@@ -1,5 +1,6 @@
 import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
+import "hardhat-deploy";
 import { HardhatUserConfig } from "hardhat/config";
 
 const config: HardhatUserConfig = {
@@ -8,6 +9,9 @@ const config: HardhatUserConfig = {
   },
   typechain: {
     outDir: "typechain"
+  },
+  namedAccounts: {
+    deployer: 0
   }
 };
 

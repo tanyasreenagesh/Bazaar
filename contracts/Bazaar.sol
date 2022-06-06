@@ -39,9 +39,6 @@ contract Bazaar {
     event PiecePublished(address _seller, address _contractAddy, uint256 _tokenID, uint256 _price);
     event PieceBought(address _newOwner, address _contractAddy, uint256 _tokenID, uint256 _price);
 
-    /*
-    TODO: Write events for logging.
-    */
     constructor() {
         bazaarOwner = msg.sender;
     }
