@@ -39,8 +39,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Resources
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+2. [React documentation](https://reactjs.org/)
+3. [Connecting Hardhat and Metamask](https://www.web3.university/article/how-to-build-a-react-dapp-with-hardhat-and-metamask)
+4. [Interacting with smart contracts using Alchemy](https://www.youtube.com/watch?v=sQJ-XQBzEuc)
+5. [Interacting with smart contracts using Moralis](https://www.youtube.com/watch?v=7TKqLJd_aYI)
