@@ -6,9 +6,11 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     const { deploy } = deployments
     const { deployer } = await getNamedAccounts()
 
-    await deploy("Bazaar", {
+    const bazaar = await deploy("Bazaar", {
         args: [],
         from: deployer
     })
+
+    console.log("Bazaar deployed to: ", bazaar.address)
 };
 export default func;
