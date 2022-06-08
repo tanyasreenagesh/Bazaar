@@ -1,8 +1,10 @@
-# Basic Sample Hardhat Project
+# Bazaar
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Bazaar is an NFT marketplace (that you should not even consider actually using) that allows people to buy and sell ERC-721 tokens listed on the platform.
 
-Try running some of the following tasks:
+[Insert landing page here (once it exists)]
+
+### Everyday Commands
 
 ```shell
 npx hardhat accounts
@@ -10,22 +12,13 @@ npx hardhat compile
 npx hardhat clean
 npx hardhat test
 npx hardhat node
+npx hardhat deploy --network X
 node scripts/sample-script.js
 npx hardhat help
 ```
 
-# Test Accounts
-Account #0: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 (10000 ETH)
-Private Key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+## Resources
 
-Account #1: 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 (10000 ETH)
-Private Key: 0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d
-
-Account #2: 0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc (10000 ETH)
-Private Key: 0x5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a
-
-Account #3: 0x90f79bf6eb2c4f870365e785982e1f101e93b906 (10000 ETH)
-Private Key: 0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6
-
-Account #4: 0x15d34aaf54267db7d7c367839aaf71a00a2c6a65 (10000 ETH)
-Private Key: 0x47e179ec197488593b187f80a00eb0da91f1b9d0b13f8733639f19c30a34926a
+1. [Connecting Hardhat and Metamask](https://www.web3.university/article/how-to-build-a-react-dapp-with-hardhat-and-metamask)
+2. [Interacting with smart contracts using Alchemy](https://www.youtube.com/watch?v=sQJ-XQBzEuc)
+3. [Interacting with smart contracts using Moralis](https://www.youtube.com/watch?v=7TKqLJd_aYI)

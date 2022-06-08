@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Bazaar FE
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -43,6 +43,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 1. [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
 2. [React documentation](https://reactjs.org/)
-3. [Connecting Hardhat and Metamask](https://www.web3.university/article/how-to-build-a-react-dapp-with-hardhat-and-metamask)
-4. [Interacting with smart contracts using Alchemy](https://www.youtube.com/watch?v=sQJ-XQBzEuc)
-5. [Interacting with smart contracts using Moralis](https://www.youtube.com/watch?v=7TKqLJd_aYI)
+
